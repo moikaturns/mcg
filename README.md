@@ -1,13 +1,16 @@
 # Intro
-- Fork of [mbitson/mcg](https://github.com/mbitson/mcg) which was hosted at [mcg.mbitson.com](http://mcg.mbitson.com/) but as of Nov 2024 is offline 
-- At present upstream repo won't build due to dependency issue which this fork works around
-- Original service at mcg.mbitson.com can be used by either running it locally:
-  - Checkout repo
-  - In project folder run:
-    - ```npm install```
-    - ```npm run start```
-  - Open browser at http://localhost:3000/
-- Or via github pages [here](https://moikaturns.github.io/mcg/) 
+- Fork of [mbitson/mcg](https://github.com/mbitson/mcg) hosted at [mcg.mbitson.com](http://mcg.mbitson.com/), which as of Nov 2024 is offline 
+- At present the upstream repo won't build due to a dependency issue, addressed in this fork
+- In lieu of normal service at mcg.mbitson.com being resumed, the service can be accessed by:
+  - Visiting a deployment of this fork on GitHub Pages [here](https://moikaturns.github.io/mcg/)
+  - Running the fork locally
+
+## Running Locally
+- Checkout this repo
+- In project folder run:
+  - ```npm install```
+  - ```npm run start```
+- Open browser at http://localhost:3000/
 
 # Material Design Color Generator
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/mbitson/mcg?style=flat-square)
