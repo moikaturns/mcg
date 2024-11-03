@@ -3,7 +3,9 @@
 - At present upstream repo won't build due to dependency issue which this fork works around
 - Original service at mcg.mbitson.com can be used by either running it locally:
   - Checkout repo
-  - In project folder run: ```npm serve```
+  - In project folder run:
+    - ```npm install```
+    - ```npm run start```
   - Open browser at http://localhost:3000/
 - Or via github pages [here](https://moikaturns.github.io/mcg/) 
 
