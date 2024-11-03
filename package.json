@@ -1,0 +1,14 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "build": "bower install",
+    "serve": "node index",
+    "start": "npm run build && npm run serve"
+  },
+  "devDependencies": {
+    "bower": "^1.8.14"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
