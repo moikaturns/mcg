@@ -209,7 +209,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 	$scope.deletePalette = function(key){
 		$scope.palettes.remove(key);
 		// Google Analytics Event Track
-		ga('send', 'event', 'mcg', 'remove_palette');
+		console.log(`'event' 'remove_palette'`);
+		//ga('send', 'event', 'mcg', 'remove_palette');
 	};
 
 	// Function to assign watchers to all bases
@@ -330,7 +331,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
         $scope.showClipboard($scope.palettes, false);
 
 	    // Google Analytics Event Track
-	    ga('send', 'event', 'mcg', 'copy_code_theme');
+		console.log(`'event' 'copy_code_theme'`);
+	    //ga('send', 'event', 'mcg', 'copy_code_theme');
     };
 
     $scope.forceNames = function(requireTwo)
@@ -395,7 +397,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		$scope.showClipboard(palette, true);
 
 		// Google Analytics Event Track
-		ga('send', 'event', 'mcg', 'copy_code_palette');
+		console.log(`'event' 'copy_code_palette'`);
+		//ga('send', 'event', 'mcg', 'copy_code_palette');
 	};
 
     // Function to show export json for loading carts later
@@ -426,7 +429,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 			}, function () { } );
 
 		// Google Analytics Event Track
-		ga( 'send', 'event', 'mcg', 'import_code' );
+		console.log(`'event' 'import_code'`);
+		//ga( 'send', 'event', 'mcg', 'import_code' );
     };
 
 	/**
@@ -474,7 +478,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 			});
 
 		// Google Analytics Event Track
-		ga('send', 'event', 'mcg', 'run_demo');
+		console.log(`'event' 'run_demo'`);
+		//ga('send', 'event', 'mcg', 'run_demo');
 	};
 
 	// Function to show export json for loading carts later
@@ -484,7 +489,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		$mdSidenav('settings').toggle();
 
 		// Google Analytics Event Track
-		ga('send', 'event', 'mcg', 'settings');
+		console.log(`'event' 'settings'`);
+		//ga('send', 'event', 'mcg', 'settings');
 	};
 
 	// Function to show export json for loading carts later
@@ -499,7 +505,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		} );
 
 		// Google Analytics Event Track
-		ga( 'send', 'event', 'mcg', 'about_us' );
+		console.log(`'event' 'about_us'`);
+		//ga( 'send', 'event', 'mcg', 'about_us' );
 	};
 
 	// Function to show generic clipboard alert dialog
@@ -519,7 +526,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		});
 
 		// Google Analytics Event Track
-		ga('send', 'event', 'mcg', 'copy_code');
+		console.log(`'event' 'copy_code'`);
+		//ga('send', 'event', 'mcg', 'copy_code');
 	};
 
 	$scope.makeSafe = function(s){
