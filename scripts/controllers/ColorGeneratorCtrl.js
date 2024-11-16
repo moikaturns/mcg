@@ -168,7 +168,7 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		$scope.calcPalette($scope.palettes.length-1);
 
 		// Google Analytics Event Track
-		ga('send', 'event', 'mcg', 'add_palette');
+		// ga('send', 'event', 'mcg', 'add_palette');
 	};
 
 	$scope.addPalettesFromLocation = function()
