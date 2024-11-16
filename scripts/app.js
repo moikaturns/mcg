@@ -63,14 +63,15 @@ mcgApp.config(function ($routeProvider, $mdThemingProvider, $sceDelegateProvider
 ).run(function($rootScope, $location, $window, $mdTheming)
     {
         // initialise google analytics
-        $window.ga('create', 'UA-62237624-1', 'auto');
+        // $window.ga('create', 'UA-62237624-1', 'auto');
 
         // track index view
-        $window.ga('send', 'pageview', 'mcg_index');
+        // $window.ga('send', 'pageview', 'mcg_index');
 
         // track pageview on state change
         $rootScope.$on('$stateChangeSuccess', function (event) {
-            $window.ga('send', 'pageview', $location.path());
+            console.log(`'pageview' ${$location.path()}`);
+            // $window.ga('send', 'pageview', $location.path());
         });
 
         $mdTheming.generateTheme('default');
