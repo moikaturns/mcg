@@ -168,6 +168,11 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		$scope.calcPalette($scope.palettes.length-1);
 
 		// Google Analytics Event Track
+		gtag('event', 'click', {
+			event_category: 'Button',
+			event_label: 'Add Palette',
+			value: '1'
+		  });
 	};
 
 	$scope.addPalettesFromLocation = function()
@@ -207,8 +212,11 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 	$scope.deletePalette = function(key){
 		$scope.palettes.remove(key);
 		// Google Analytics Event Track
-		console.log(`'event' 'remove_palette'`);
-		//ga('send', 'event', 'mcg', 'remove_palette');
+		gtag('event', 'click', {
+			event_category: 'Button',
+			event_label: 'Remove Palette',
+			value: '1'
+		  });
 	};
 
 	// Function to assign watchers to all bases
@@ -329,8 +337,11 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
         $scope.showClipboard($scope.palettes, false);
 
 	    // Google Analytics Event Track
-		console.log(`'event' 'copy_code_theme'`);
-	    //ga('send', 'event', 'mcg', 'copy_code_theme');
+		gtag('event', 'click', {
+			event_category: 'Button',
+			event_label: 'Copy Theme',
+			value: '1'
+		  });
     };
 
     $scope.forceNames = function(requireTwo)
@@ -395,8 +406,11 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		$scope.showClipboard(palette, true);
 
 		// Google Analytics Event Track
-		console.log(`'event' 'copy_code_palette'`);
-		//ga('send', 'event', 'mcg', 'copy_code_palette');
+		gtag('event', 'click', {
+			event_category: 'Button',
+			event_label: 'Copy Code Palette',
+			value: '1'
+		  });
 	};
 
     // Function to show export json for loading carts later
@@ -427,8 +441,11 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 			}, function () { } );
 
 		// Google Analytics Event Track
-		console.log(`'event' 'import_code'`);
-		//ga( 'send', 'event', 'mcg', 'import_code' );
+		gtag('event', 'click', {
+			event_category: 'Button',
+			event_label: 'Import Code',
+			value: '1'
+		  });
     };
 
 	/**
@@ -476,8 +493,11 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 			});
 
 		// Google Analytics Event Track
-		console.log(`'event' 'run_demo'`);
-		//ga('send', 'event', 'mcg', 'run_demo');
+		gtag('event', 'click', {
+			event_category: 'Button',
+			event_label: 'Run Demo',
+			value: '1'
+		  });
 	};
 
 	// Function to show export json for loading carts later
@@ -487,8 +507,11 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		$mdSidenav('settings').toggle();
 
 		// Google Analytics Event Track
-		console.log(`'event' 'settings'`);
-		//ga('send', 'event', 'mcg', 'settings');
+		gtag('event', 'click', {
+			event_category: 'Button',
+			event_label: 'Settings',
+			value: '1'
+		  });
 	};
 
 	// Function to show export json for loading carts later
@@ -503,8 +526,11 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		} );
 
 		// Google Analytics Event Track
-		console.log(`'event' 'about_us'`);
-		//ga( 'send', 'event', 'mcg', 'about_us' );
+		gtag('event', 'click', {
+			event_category: 'Button',
+			event_label: 'About Us',
+			value: '1'
+		  });
 	};
 
 	// Function to show generic clipboard alert dialog
@@ -524,8 +550,11 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		});
 
 		// Google Analytics Event Track
-		console.log(`'event' 'copy_code'`);
-		//ga('send', 'event', 'mcg', 'copy_code');
+		gtag('event', 'click', {
+			event_category: 'Button',
+			event_label: 'Copy Code',
+			value: '1'
+		  });
 	};
 
 	$scope.makeSafe = function(s){
