@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html ng-app="mcgApp">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3321GFS477"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      const MEASUREMENT_ID = 'G-3321GFS477';
+      gtag('config', MEASUREMENT_ID);
+    </script>
     <meta charset="utf-8">
     <title>Material Design Theme & Palette Color Generator</title>
 	<meta name="description" content="Generate your own Material Design Color Palette with full control over the colors! Export to AngularJS, Materialize, CSS, Polymer, and more!">
@@ -21,15 +30,6 @@
 	<!-- Material Color Generator Application -->
 	<link rel="stylesheet" href="styles/main.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3321GFS477"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  const MEASUREMENT_ID = 'G-3321GFS477';
-  gtag('config', MEASUREMENT_ID);
-</script>
 <body style="">
 	<div ng-view layout="column">
 	</div>
