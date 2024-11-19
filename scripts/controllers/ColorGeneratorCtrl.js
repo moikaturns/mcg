@@ -168,10 +168,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		$scope.calcPalette($scope.palettes.length-1);
 
 		// Google Analytics Event Track
-		gtag('event', 'click', {
-			event_category: 'Button',
-			event_label: 'Add Palette',
-			value: '1'
+		gtag('event', 'page_view', {
+			page_title: 'Add Palette'
 		  });
 	};
 
@@ -212,10 +210,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 	$scope.deletePalette = function(key){
 		$scope.palettes.remove(key);
 		// Google Analytics Event Track
-		gtag('event', 'click', {
-			event_category: 'Button',
-			event_label: 'Remove Palette',
-			value: '1'
+		gtag('event', 'page_view', {
+			page_title: 'Remove Palette'
 		  });
 	};
 
@@ -337,10 +333,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
         $scope.showClipboard($scope.palettes, false);
 
 	    // Google Analytics Event Track
-		gtag('event', 'click', {
-			event_category: 'Button',
-			event_label: 'Copy Theme',
-			value: '1'
+		gtag('event', 'page_view', {
+			page_title: 'Copy Theme'
 		  });
     };
 
@@ -406,10 +400,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		$scope.showClipboard(palette, true);
 
 		// Google Analytics Event Track
-		gtag('event', 'click', {
-			event_category: 'Button',
-			event_label: 'Copy Code Palette',
-			value: '1'
+		gtag('event', 'page_view', {
+			page_title: 'Copy Code Palette'
 		  });
 	};
 
@@ -441,10 +433,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 			}, function () { } );
 
 		// Google Analytics Event Track
-		gtag('event', 'click', {
-			event_category: 'Button',
-			event_label: 'Import Code',
-			value: '1'
+		gtag('event', 'page_view', {
+			page_title: 'Import Code'
 		  });
     };
 
@@ -493,10 +483,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 			});
 
 		// Google Analytics Event Track
-		gtag('event', 'click', {
-			event_category: 'Button',
-			event_label: 'Run Demo',
-			value: '1'
+		gtag('event', 'page_view', {
+			page_title: 'Run Demo'
 		  });
 	};
 
@@ -507,10 +495,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		$mdSidenav('settings').toggle();
 
 		// Google Analytics Event Track
-		gtag('event', 'click', {
-			event_category: 'Button',
-			event_label: 'Settings',
-			value: '1'
+		gtag('event', 'page_view', {
+			page_title: 'Settings'
 		  });
 	};
 
@@ -526,10 +512,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		} );
 
 		// Google Analytics Event Track
-		gtag('event', 'click', {
-			event_category: 'Button',
-			event_label: 'About Us',
-			value: '1'
+		gtag('event', 'page_view', {
+			page_title: 'About Us'
 		  });
 	};
 
@@ -550,10 +534,8 @@ function ($scope, $mdDialog, $rootScope, $mdColorPalette, $mdSidenav, $cookies, 
 		});
 
 		// Google Analytics Event Track
-		gtag('event', 'click', {
-			event_category: 'Button',
-			event_label: 'Copy Code',
-			value: '1'
+		gtag('event', 'page_view', {
+			page_title: 'Copy Code'
 		  });
 	};
 
